@@ -6,21 +6,27 @@ category: concept
 
 ## What it is
 
-Role-based access control (RBAC) is a method to regulate system and resource access based on individual user roles within an organization.
-Each job function has a specific role and permissions. 
-For instance, a marketing team member may have permission to view sales deals in the pipeline (*read* permission) but won't be allowed to edit them (*write* permission). 
-Sales and marketing have different permissions based on their roles, hence role-based access control, and the same applies to roles within engineering teams. 
+Role-based access control (RBAC) is a method of regulating access to computer or network resources based on the roles of individual users within your organization.
+
+In RBAC, two objects are defined: roles and role bindings. 
+Roles specify permissions on resources, dictating what actions users or a set of users can perform on those resources.  
+Role bindings, on the other hand, designate **who** can assume these roles. 
+This "who" can be a user or a set of users. 
+This approach facilitates a streamlined access control process while reducing the complexity of managing permissions for individual users.
 
 ## Problem it addresses
 
-Individually managing access permissions of multiple users across various system resources and data can be complex.
-After all, each user likely needs access to a different set of resources. 
-Let's say an organization has 500 developers (users) and 300 resources with varying permission levels (read, write, and no access). The administrator must ensure each user has the correct permissions for all 300 resources.  
-RBAC simplifies the process by providing predefined access control based on role groups.
+RBAC addresses the challenge of limiting the resources team members and applications can access, as well as the actions they can take, 
+particularly as the number of cluster nodes, applications, and team members increases.
+Administrators must ensure that each user has the correct permissions for the resources they need to access, 
+a task that can become unwieldy and error-prone without a structured access control mechanism.
 
 
 ## How it helps
 
-RBAC provides granular control over user permissions within software systems. 
-Depending on their roles, team members can modify a section, only view it, or have no access at all. 
-This granular permission allocation allows team members with different roles to work on the same system while minimizing risk.
+By assigning specific permissions to roles, rather than individual users, RBAC streamlines the access control process. 
+Team members are granted permissions based on their assigned roles, 
+enabling them to perform their job functions efficiently. 
+This approach ensures that users have the right level of access to resources, 
+minimizing the risk of unauthorized or incorrect access. 
+Overall, RBAC helps improve access management, security, and operational efficiency within organizations.
